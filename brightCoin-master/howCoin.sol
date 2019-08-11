@@ -6,7 +6,7 @@ contract howCoin {
 
     string public name = "howCoin";
     string public symbol = "HOW";
-    uint256 public max_supply = 42000000000000;
+    uint256 public max_supply = 420000000000000000;
     uint256 public unspent_supply = 0;
     uint256 public spendable_supply = 0;
     uint256 public circulating_supply = 0;
