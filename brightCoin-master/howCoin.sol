@@ -4,9 +4,9 @@ contract howCoin {
     /* This creates an array with all balances */
     mapping (address => uint256) public balanceOf;
 
-    string public name = "howCoin";
-    string public symbol = "HOW";
-    uint256 public max_supply = 420000000000000000;
+    string public name = "BrightCoin";
+    string public symbol = "Bright";
+    uint256 public max_supply = 42000000000000;
     uint256 public unspent_supply = 0;
     uint256 public spendable_supply = 0;
     uint256 public circulating_supply = 0;
@@ -19,7 +19,7 @@ contract howCoin {
     event Mint(address indexed from, uint256 value);
 
     /* Initializes contract with initial supply tokens to the creator of the contract */
-    function howCoin() public {
+    function BrightCoin() public {
       timeOfLastHalving = now;
     }
 
