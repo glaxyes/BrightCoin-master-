@@ -6,7 +6,7 @@ contract BrightCoin {
 
     string public name = "BrightCoin";
     string public symbol = "Bright";
-    uint256 public max_supply = 42000000000000;
+    uint256 public max_supply = 420000000000000000;
     uint256 public unspent_supply = 0;
     uint256 public spendable_supply = 0;
     uint256 public circulating_supply = 0;
@@ -75,15 +75,15 @@ contract BrightCoin {
 
     function withdraw(uint256 amountToWithdraw) public returns (bool) {
 
-        // Balance given in HOW
+        // Balance given in bright
 
         require(balanceOf[msg.sender] >= amountToWithdraw);
         require(balanceOf[msg.sender] - amountToWithdraw <= balanceOf[msg.sender]);
 
-        // Balance checked in HOW, then converted into Wei
+        // Balance checked in bright, then converted into Wei
         balanceOf[msg.sender] -= amountToWithdraw;
 
-        // Added back to supply in HOW
+        // Added back to supply in bright
         unspent_supply += amountToWithdraw;
         // Converted into Wei
         amountToWithdraw *= 100000000;
