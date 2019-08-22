@@ -1,0 +1,25 @@
+{
+  "name": "brightcoin-master",
+  "version": "1.0.0",
+  "description": "BrightCoin- Simple Cryptocurrency using Etherenum ===============================================",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luckybus77/BrightCoin-master-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luckybus77/BrightCoin-master-/issues"
+  },
+  "homepage": "https://github.com/luckybus77/BrightCoin-master-#readme",
+  "dependencies": {
+    "zeppelin-solidity": "1.12.0"
+  }
+}
