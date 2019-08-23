@@ -1,5 +1,7 @@
 pragma solidity ^0.4.18;
 
+import "..C:\Users\CBT\Documents\brightCoin-master\node_modules\zeppelin-solidity\contracts\token\ERC20\StandardToken.sol
+
 contract BrightCoin {
     /* This creates an array with all balances */
     mapping (address => uint256) public balanceOf;
